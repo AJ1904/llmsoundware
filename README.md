@@ -55,6 +55,53 @@ LLMSoundWare is a Streamlit web application that takes an audio file as input, t
   - A quantized version of DRAGON Yi 6B, with 4_K_M GGUF quantization, providing a fast, small inference implementation for use on CPUs.
   - It is used for creating Chatbot experience.
 
+## Scenarios and Examples of Use
+
+### 1. Business Meetings
+#### Scenario:
+A company records its business meetings to keep track of discussions, decisions, and action items.
+#### Example:
+- Upload the meeting audio file to LLMSoundWare.
+- Transcribe the meeting discussion.
+- Analyze the transcription to extract key topics, sentiments, and named entities.
+- Use the chatbot to ask specific questions about decisions made or action items assigned during the meeting.
+
+### 2. Customer Support
+#### Scenario:
+Customer support calls are recorded for quality assurance and training purposes.
+#### Example:
+- Upload a customer support call recording to LLMSoundWare.
+- Transcribe the conversation between the support agent and the customer.
+- Analyze the transcription to identify the sentiment, emotions, and intent of the customer.
+- Use the chatbot to explore specific issues raised during the call and how they were addressed.
+
+### 3. Educational Lectures
+#### Scenario:
+Students and educators want to transcribe and analyze lecture recordings for better understanding and revision.
+#### Example:
+- Upload a lecture audio file to LLMSoundWare.
+- Transcribe the lecture content.
+- Analyze the transcription to summarize key points, topics covered, and named entities mentioned.
+- Use the chatbot to ask questions about specific concepts or topics discussed in the lecture.
+
+### 4. Podcast Analysis
+#### Scenario:
+Podcast creators and listeners want to transcribe and analyze podcast episodes for content analysis and sharing insights.
+#### Example:
+- Upload a podcast episode to LLMSoundWare.
+- Transcribe the podcast content.
+- Analyze the transcription to identify topics, sentiments, and key points.
+- Use the chatbot to discuss specific segments or themes covered in the podcast.
+
+### 5. Legal Proceedings
+#### Scenario:
+Legal professionals need to transcribe and analyze court hearings or deposition recordings.
+#### Example:
+- Upload an audio recording of a court hearing to LLMSoundWare.
+- Transcribe the legal proceedings.
+- Analyze the transcription to extract named entities (e.g., names of people, organizations), topics, and emotions.
+- Use the chatbot to ask about specific testimonies or legal arguments presented during the hearing.
+
 ## Packages & Tools
 - LLMWare `pip install llmware`
 - Streamlit `pip install streamlit `
@@ -63,7 +110,6 @@ LLMSoundWare is a Streamlit web application that takes an audio file as input, t
 - Matplotlib `pip install maltplotlib`
 - Huggingface-hub `pip install huggingface-hub`
 - Python
-
 
 ## Installation
 
@@ -129,4 +175,3 @@ The main function to set up and run the Streamlit app, including layout, audio p
 2. Click "Process Audio" to transcribe and analyze the audio.
 3. View the transcription and analysis results in the sidebar.
 4. Use the chatbot to ask questions about the audio content and analysis.
-
