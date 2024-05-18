@@ -3,3 +3,4 @@ streamlit
 llmware
 matplotlib
 streamlit-audiorec
+huggingface-hub
