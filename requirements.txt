@@ -2,3 +2,4 @@ plotly
 streamlit
 llmware
 matplotlib
+streamlit-audiorec
