@@ -57,8 +57,10 @@ LLMSoundWare is a LLMWare + Streamlit web application that takes an audio file a
   - It is used for creating Chatbot experience.
 
 ## Video
-
 Watch on [YouTube](https://youtu.be/RCZ4bzQrdAk)
+
+
+https://github.com/AJ1904/llmsoundware/assets/49027490/53519bf4-90d7-48e7-b62b-56404598ef37
 
 
 ## Scenarios and Examples of Use
