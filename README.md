@@ -2,7 +2,7 @@
 
 ## Overview
 
-LLMSoundWare is a Streamlit web application that takes an audio file as input, transcribes it using LLMware models, and performs various analyses on the transcription. The app provides insights into sentiment, named entities, topics, categories, intents, emotions, and summaries extracted from the audio content. Additionally, it features an interactive chatbot powered by the Dragon model from LLMware, allowing users to ask questions about the audio and its analysis.
+LLMSoundWare is a LLMWare + Streamlit web application that takes an audio file as input, transcribes it using LLMware models, and performs various analyses on the transcription. The app provides insights into sentiment, named entities, topics, categories, intents, emotions, and summaries extracted from the audio content. Additionally, it features an interactive chatbot powered by the Dragon model from LLMware, allowing users to ask questions about the audio and its analysis.
 
 ## Features
 
@@ -17,6 +17,7 @@ LLMSoundWare is a Streamlit web application that takes an audio file as input, t
   - Emotions 
   - Summary
 - **Interactive Chatbot:** Chat with a Dragon model-powered assistant to inquire about the audio content and analysis results.
+- Everything running locally (using Mac M1).
 
 ## LLMWare models used
 - #### WhisperCPP (whisper-cpp-base-english) 
@@ -54,6 +55,11 @@ LLMSoundWare is a Streamlit web application that takes an audio file as input, t
 - #### dragon-yi-answer-tool 
   - A quantized version of DRAGON Yi 6B, with 4_K_M GGUF quantization, providing a fast, small inference implementation for use on CPUs.
   - It is used for creating Chatbot experience.
+
+## Video
+
+Watch on [YouTube](https://youtu.be/RCZ4bzQrdAk)
+
 
 ## Scenarios and Examples of Use
 
@@ -130,9 +136,22 @@ Legal professionals need to transcribe and analyze court hearings or deposition 
 
 1. Run the Streamlit app:
    ```sh
-   streamlit run app.py
+   streamlit run llmsoundware.py
    ```
 2. Open your web browser and go to `http://localhost:8501`.
+
+## Example Usage
+
+1. Upload an audio file or record audio.
+2. Click "Process Audio" to transcribe and analyze the audio.
+3. View the transcription and analysis results in the sidebar.
+4. Use the chatbot to ask questions about the audio content and analysis.
+
+## Troubleshoot
+1. Ensure that you have installed LLMWare using pip.
+2. Use Python version >=3.11
+3. A lot of models are loaded into the memory. Out of memory issues might occur, so run in isolated environment.
+4. Streamlit-audiorec is not part of streamlit, you should install it using pip.
 
 ## Code Structure
 
@@ -169,9 +188,4 @@ Generates responses for the chatbot using the Dragon model, yielding words progr
 ### `main()`
 The main function to set up and run the Streamlit app, including layout, audio processing, and chatbot functionality.
 
-## Example Usage
 
-1. Upload an audio file or record audio.
-2. Click "Process Audio" to transcribe and analyze the audio.
-3. View the transcription and analysis results in the sidebar.
-4. Use the chatbot to ask questions about the audio content and analysis.
